@@ -35,7 +35,32 @@ nav button {
   color: #fff;
   padding: 7px 20px;
   font-size: 12px;
-  border-radius:4px;
+  border-radius: 3px;
   margin-left: 10px;
-  cursor:pointer;
+  cursor: pointer;
+}
+.language-button {
+  display: inline-flex;
+  background: transparent;
+  border: 1px solid white;
+  padding: 7px 10px;
+}
+.language-button img {
+  width: 10px;
+  margin-left: 10px;
+}
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 100px;
+}
+.header-content h1 {
+  font-size: 60px;
+  line-height: 70px;
+  /* width: 50%; */
+  font-weight: 600px;
+  max-width: 650px;
 }
