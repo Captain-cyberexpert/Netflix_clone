@@ -92,3 +92,98 @@ nav button {
   cursor: pointer;
   padding: 14px 30px;
 }
+.feature{
+  padding: 50px 12%;
+  font-size: 22px;
+}
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.text-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+
+}
+.img-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col img{
+  display: block;
+  width: 90%;
+  margin:auto;
+}
+.feature h2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.faq{
+padding: 10px 10px;
+text-align: center;
+font-size: 18px;
+}
+.faq h2{
+  font-weight: 500;
+  font-size: 30px;
+}
+.faq .accordian{
+  align-items: center;
+}
+
+.accordian{
+  margin: 60px;
+  width: 100%;
+  max-width: 750px;
+
+
+}
+.accordian li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+  margin-left: 200px;
+}
+
+.accordian li label{
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+label::after{
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+input[type="radio"]{
+  display: none;
+}
+.accordian .conten{
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ,padding 1s;
+}
+.accordian input[type="radio"]:checked + label + .conten {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+/* .accordian input[type="radio"]:checked + label + .conten {
+ transform: rotate(135deg);
+} */
